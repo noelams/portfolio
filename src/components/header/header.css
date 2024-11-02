@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header{ 
+    background-color: #333;
+    min-height: 5vh;
+}
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns:50% 12.5% 12.5% 12.5% 12.5%;
+}
+ ul a{
+     background-color: #333;
+    color: rgba(245, 245, 245, 0.638);
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+ }
+
+ a:visitied{
+    color: rgba(245, 245, 245, 0.638);
+ }
+
+ a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+ }

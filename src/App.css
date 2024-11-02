@@ -1,0 +1,94 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+}
+
+.contact{
+
+  margin: 3rem;
+}
+
+h1, .my-name{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+input{
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.message{
+  height: 10rem;
+  width: 70%;
+}
+
+button{
+  width: 30%;
+  padding: 1rem;
+  border-radius: 5%;
+  margin-top: 2rem;
+  background-color:beige;
+
+}
+
+img{
+  border-radius: 50%;
+  /* border-style: dotted; */
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  max-width: 100%;
+  height: 80vh;
+  width: 100vw;
+}
+
+.home-text {
+  color: #333;
+}
+
+.my-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6c63ff; /* Accent color */
+  margin-bottom: 1rem;
+}
+
+.home-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.home-text a {
+  color: #6c63ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home-text a:hover {
+  text-decoration: none;
+  color: #639aff;
+}
+
