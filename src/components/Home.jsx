@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import placeholder from "./imgs/placeholder.png";
+import placeholder from "./imgs/my_picture";
 
 function Home() {
   return (
     <div className="home-page">
       <img
-        src={placeholder}
+        src={my_picture}
         alt="placeholder"
         className="potrait"
         width={200}
