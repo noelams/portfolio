@@ -1,11 +1,11 @@
 import React from "react";
 
-function Projects() {
+function RESUME() {
   return (
     <div className="current-page">
-      <h1>Projects</h1>
+      <h1>RESUME SECTION</h1>
     </div>
   );
 }
 
-export default Projects;
+export default RESUME;

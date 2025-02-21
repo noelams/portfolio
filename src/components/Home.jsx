@@ -1,25 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import placeholder from "./imgs/my_picture";
 
 function Home() {
   return (
-    <div className="home-page">
-      <img
-        src={my_picture}
-        alt="placeholder"
-        className="potrait"
-        width={200}
-        height={200}
-      />
+    <div className="current-page">
       <div className="home-text">
-        <p className="my-name">HI, I'M NOEL.</p>
-        <p>Your go-to frontend app developer!</p>
-        <p>Feel free to check out my projects on the </p>
-        <p>
-          <Link to="/projects">Project page </Link>
+        <p className="intro-text">Hi, my name is</p>
+        <p className="sub-text">Noel Ali.</p>
+        <p className="sub-text two">Your go-to frontend app developer!</p>
+        <p className="description">Feel free to check out my projects on the</p>
+        <p className="description">
+          <Link to="/projects" className="home-link">
+            Project page
+          </Link>
           or drop me a message through the
-          <Link to="/contact"> Contact Page. </Link>
+          <Link to="/contact" className="home-link">
+            Contact Page.
+          </Link>
           Let's create something amazing together!
         </p>
       </div>
