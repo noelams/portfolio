@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="current-page">
+    <div className="container">
       <div className="home-text">
         <p className="intro-text">Hi, my name is</p>
         <p className="sub-text">Noel Ali.</p>

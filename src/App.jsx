@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import "./styles/App.css";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import RESUME from "./components/RESUME";
+
+import "./styles/App.css";
+import "./styles/utills.css";
 
 function App() {
   return (
