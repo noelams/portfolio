@@ -2,7 +2,12 @@
 :root{
   --background-color: #0A192F;
   --primary-color: #4EC9B2;
-  --secondary-color:#CCD6F6;
+  --secondary-color:#93A2B7;
+  --sec2-color:#ffffff;
+  --sec3-color:#BCC5D2;
+  --sec4-color:#122B39;
+  --strong-color:#C3C1F6;
+  --span-bgcolor:#122B39;
 
   --size-xxs: 0.5rem;
   --size-xs: 0.75rem;
@@ -26,7 +31,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: "Poppins", serif;
+  font-family: 'General Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -83,9 +88,6 @@ cursor: pointer;
 
 }
 
-img{
-  border-radius: 50%;
-}
 
 .current-page {
   width: 100%;

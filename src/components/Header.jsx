@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
-import my_picture from "./imgs/my_picture.jpg";
+// import my_picture from "./imgs/my_picture.jpg";
 
 function Header() {
   return (
     <header className="header container">
-      <img
+      {/* <img
         src={my_picture}
         alt="placeholder"
         className="potrait"
         width={35}
         height={35}
-      />
+      /> */}
 
       <nav className="links-container">
         <ul className="header__menu">

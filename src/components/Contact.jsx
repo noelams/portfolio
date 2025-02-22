@@ -38,7 +38,7 @@ function Contact() {
   };
 
   return (
-    <div className="current-page">
+    <div className="container">
       <form ref={form} onSubmit={handleSubmit} name="myForm">
         <input
           type="text"
