@@ -46,66 +46,6 @@
 }
 
 
-/* contact page */
-form{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
-
-
-input{
-  padding: 1rem;
-  margin-bottom: 2rem;
-  width: 70%;
-  /* background-color: var(--background-color); */
-  border-style: none;
-  border-width: 10px;
-  border-color: var(--primary-color);
-  border-radius: 0.5rem;
-  color: white;
-}
-
-.message{
-  height: 10rem;
-  width: 70%;
-  background-color: var(--background-color);
-  color: white;
-}
-
-button{
-  width: 30%;
-  padding: 1rem;
-  border-radius: 5%;
-  margin-top: 2rem;
-  background-color: var(--background-color);
-  color: white;
-  border-style: none;
-  border-width: 1px;
-  border-color: var(--primary-color);
-  border-radius: 0.5rem;
-cursor: pointer;
-
-}
-
-
-.current-page {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  height: 100vh;
-}
-
-
-
 .home-text {
   font-size: 1rem;
   line-height: 1.6;

@@ -29,6 +29,7 @@ function About() {
         <ul className="about__ul">
           <li className="about__list">
             <strong>Programming Languages:</strong> <span>JavaScript </span>
+            <span>TypeScript</span>
             <span>Python</span> <span>C++</span>
           </li>
           <li className="about__list">
@@ -38,11 +39,15 @@ function About() {
             <span>TailwindCSS</span>
           </li>
           <li className="about__list">
-            <strong>Databases:</strong> <span>Firebase</span>{" "}
+            <strong>Mobile App Development:</strong> <span>React-Native</span>
+            <span>Flutter</span>
+          </li>
+          <li className="about__list">
+            <strong>Databases:</strong> <span>Firebase</span>
             <span>MongoDB</span> <span>mySQL</span>
           </li>
           <li className="about__list">
-            <strong>Version Control:</strong> <span>Git</span>{" "}
+            <strong>Version Control:</strong> <span>Git</span>
             <span>GitHub</span> <span>GitLab</span>
           </li>
           <li className="about__list">
