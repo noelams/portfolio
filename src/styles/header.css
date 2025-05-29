@@ -27,3 +27,36 @@
 .header__link:hover{
    color: var(--primary-color);
 }
+
+
+@media(min-width:475px){
+   .header__link{
+      font-size: var(--size-sm);
+   }
+
+}
+/*sm*/
+@media(min-width:640px){
+}
+/*md*/
+@media(min-width:768px){
+   .header__link{
+      font-size: var(--size-md);
+   }
+}
+
+/*lg*/
+@media(min-width:1024px){
+   .header__link{
+      font-size: var(--size-lg);
+   }
+
+}
+/*xl*/
+@media(min-width:1280px){
+
+}
+/*xxl*/
+@media(min-width:1536px){
+
+}

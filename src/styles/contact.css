@@ -1,17 +1,17 @@
-.contact__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
+.heading__container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  margin: 2rem 0rem;
 }
 
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
 
@@ -29,7 +29,6 @@ input::placeholder {
   }
 
 textarea {
-    width: 100%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -56,6 +55,11 @@ textarea {
     border-color: var(--primary-color);
   }
 
+  input, textarea {
+    width: 90%;
+    max-width: 600px;
+  }
+  
   button{
     display: inline-block;
     font-weight: 600;
@@ -76,9 +80,12 @@ button:hover{
     0 10px 10px rgba(39, 126, 202, 0.22), 0 0 120px -10px var(--background-color);
 }
 
-.social__link-container{
-
+.social__links-container{
+  align-self: center;
+  margin-top: 1rem;
 }
+
+
 
 .social__links{
     display: inline-block;
@@ -86,6 +93,22 @@ button:hover{
     list-style: none;
     letter-spacing: -0.05em;
     font-weight: 600;
+}
+
+.social__links a{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  /* color: var(--primary-color); */
+  color: #f1f5f9;
+  transition: color 0.15s ease-in;
+}
+
+.social__links a:hover{
+ color: var(--primary-color);
 }
 /* @media(min-width:475px){
 

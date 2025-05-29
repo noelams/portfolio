@@ -52,6 +52,53 @@ box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
 .section {
     margin-top: 5rem;
   }
+
+  .heading{
+    font-size: var(--size-xl);
+    font-weight: bold;
+    color: var(--sec2-color);
+  }
+  .sub__heading{
+    font-size: var(--size-sm);
+    color: var(--sec2-color);
+    font-weight: bold;
+  }
+
+  /* resume styles */
+  .resume{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* .resume-image{
+    width:707px;
+  } */
+
+  .download-link{
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 5rem;
+    border: 1px solid var(--sec2-color);
+    padding: 10px;
+    border-radius: 0.2rem;
+    color: var(--sec2-color);
+
+    transition: color 0.15s ease-in, background-color 0.15s ease-in;
+  }
+
+  .download-link:hover{
+
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-color: var(--primary-color);
+  }
+
+  .download-link:active{
+    opacity: 0.75;
+  }
+
   
 /*xs*/
 @media(min-width:475px){
@@ -63,6 +110,12 @@ box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
 @media(min-width:640px){
     .container{
         max-width: 640px;
+    }
+    .resume-image{
+      width: 353.5px;
+    }
+    .heading{
+      font-size: var(--size-2xl);
     }
 }
 /*md*/
@@ -79,6 +132,13 @@ box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
     .section {
         margin-top:10rem;
       }
+      .resume-image{
+        width: 707px;
+      }
+      .heading{
+        font-size: var(--size-3xl);
+      }
+
       
 }
 /*xl*/

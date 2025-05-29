@@ -5,25 +5,45 @@ function About() {
   return (
     <div className="container about">
       <div className="about__content">
-        <h2 className="about__title">About</h2>
-        <p className="about__description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-          sapiente cum ipsam animi esse alias. Accusantium obcaecati, eum ipsam
-          officia corrupti, repellat ex, provident eaque itaque veniam delectus
-          exercitationem explicabo.
-        </p>
-        <p className="about__description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          neque nemo alias quas eius excepturi nihil labore expedita molestiae
-          ipsam. Temporibus libero possimus cupiditate quidem labore
-          voluptatibus numquam distinctio aliquid?
-        </p>
-        <p className="about__description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-          repellat qui totam excepturi nostrum tempora. Modi quis obcaecati
-          nostrum, iusto dolorem ab maxime quod pariatur id accusantium, eos
-          magnam fuga?
-        </p>
+        <h2 className="about__title">About Me</h2>
+
+        <div>
+          <p className="sub__heading">Who I Am </p>
+          <p className="about__description">
+            I'm a passionate developer with a love for creating new and exciting
+            software. I'm always up for a challenge and thrive in collaborative
+            environments where I can both contribute and grow. Whether it’s
+            building something from scratch or diving into unfamiliar territory,
+            I enjoy exploring the possibilities of tech and constantly expanding
+            what I know.
+          </p>
+        </div>
+        <div>
+          <p className="sub__heading">Experience</p>
+          <p className="about__description">
+            Over the past three years, I’ve focused on frontend development,
+            primarily using React and JavaScript to build responsive and dynamic
+            user interfaces. I’ve also worked on cross-platform mobile
+            development using React Native. In one of my recent experiences, I
+            collaborated with a team to design and maintain both the app and
+            website for FarmyApp, an agricultural tech platform. Through this
+            and other projects, I’ve developed a strong foundation in clean code
+            practices, component-driven design, and effective teamwork.
+          </p>
+        </div>
+        <div>
+          <p className="sub__heading">Interest</p>
+          <p className="about__description">
+            I’m deeply fascinated by Artificial Intelligence and its potential
+            to transform lives, especially here in Africa. I’m driven by a
+            vision to help Nigeria and the wider African continent unlock their
+            full potential in the tech space. That curiosity that makes you ask
+            “how does this work?” is what keeps me learning, building, and
+            pushing forward. My ultimate goal is to play a role in shaping
+            innovative solutions that make a real difference in people’s lives.
+          </p>
+        </div>
+
         <hr />
         <h3 className="about__subtitle">Technologies</h3>
         <ul className="about__ul">
@@ -56,12 +76,17 @@ function About() {
             <span>Nltk</span>
           </li>
           <li className="about__list">
+            <strong>Platforms:</strong> <span>Expo</span>
+            <span>Vite</span> <span>Postman</span>
+            <span>Figma</span> <span>GitHub</span>
+          </li>
+          <li className="about__list">
             <strong>Cloud Services:</strong> <span>AWS</span>
           </li>
         </ul>
       </div>
       <div className="about__img-wrapper">
-        <img src="/placeholder.png" alt="About image" className="about__img" />
+        <img src="/About-image.jpg" alt="About image" className="about__img" />
       </div>
     </div>
   );
