@@ -1,6 +1,6 @@
 import React from "react";
 
-function RESUME() {
+function Resume() {
   return (
     <div className="container resume">
       <h1 className="heading">RESUME SECTION</h1>
@@ -13,4 +13,4 @@ function RESUME() {
   );
 }
 
-export default RESUME;
+export default Resume;

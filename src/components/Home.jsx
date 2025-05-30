@@ -4,14 +4,19 @@ import "../styles/hero.css";
 
 function Home() {
   return (
-    <div className="hero container">
-      <img src="/my_picture.jpg" alt="Profile picture" className="hero__img" />
-      <h2 className="hero__subtitle">Hi I'm Noel Ali</h2>
-      <h1 className="hero__title">
+    <main className="hero container" role="main">
+      <img
+        src="/my_picture.jpg"
+        alt="Profile picture"
+        className="hero__img"
+        loading="lazy"
+      />
+      <h1 className="hero__subtitle">Hi I'm Noel Ali</h1>
+      <h2 className="hero__title">
         Your go-to
         <br />
         Software Engineer!
-      </h1>
+      </h2>
       <p className="hero__description">
         Checkout some of my work through the{" "}
         <Link to="/projects" className="hero__link">
@@ -23,7 +28,7 @@ function Home() {
         </Link>
         Let's create something amazing together!
       </p>
-    </div>
+    </main>
   );
 }
 

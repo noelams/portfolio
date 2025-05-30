@@ -3,13 +3,17 @@ import "../styles/footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <hr />
       <p className="description">Designed and developed by Ali Noel</p>
       <p className="description">noelams03@gmail.com</p>
       <ul className="social__links-container">
         <li className="social__links">
-          <a href="https://github.com/noelams" target="_blank">
+          <a
+            href="https://github.com/noelams"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -27,6 +31,7 @@ function Footer() {
           <a
             href="https://www.linkedin.com/in/inalegwu-noel-ali-030049239/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,27 +46,35 @@ function Footer() {
           </a>
         </li>
         <li className="social__links">
-          <a href="mailto:noelams@gmail.com" target="_blank">
+          <a
+            href="mailto:noelams@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              class="size-6"
+              className="size-6"
               width="35"
               height="35"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
               />
             </svg>
           </a>
         </li>
         <li className="social__links">
-          <a href="https://x.com/Alinoel17" target="_blank">
+          <a
+            href="https://x.com/Alinoel17"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentcolor"
@@ -76,7 +89,7 @@ function Footer() {
           </a>
         </li>
       </ul>
-    </div>
+    </footer>
   );
 }
 

@@ -6,10 +6,10 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import About from "./components/About";
-import RESUME from "./components/RESUME";
+import Resume from "./components/Resume";
 
 import "./styles/App.css";
-import "./styles/utills.css";
+import "./styles/utils.css";
 
 function App() {
   return (
@@ -18,11 +18,12 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
-            <Route path="*" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<RESUME />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </div>
         <Footer />

@@ -27,11 +27,11 @@
 }
 
 
-*{
+*, html, body{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'General Sans', sans-serif;
+  font-family: "poppins", "General Sans";
   font-weight: 400;
   font-style: normal;
 }
@@ -42,7 +42,7 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--background-color);
-
+  /* flex: 1; */
 }
 
 

@@ -18,12 +18,12 @@
 
 .hero__subtitle{
     color: var(--primary-color);
-    font-size: var(--size-base);
+    font-size: var(--size-2xl);
     line-height: 0.9;
 }
 .hero__title{
     color: var(--sec2-color);
-    font-size: var(--size-3xl);
+    font-size: var(--size-4xl);
     text-transform: uppercase;
     letter-spacing: -0.05em;
     line-height: 0.9;
@@ -38,16 +38,20 @@
 .hero__link{
     text-decoration: none;
     color: var(--sec2-color);
-
+    
     transition: color 0.3s;
-}
-
-.hero__link:hover{
+  }
+  
+  .hero__link:hover{
+  transform: translateY(-2px);
    color: var(--primary-color);
 }
 
+.hero__link:focus {
+  outline: 2px dashed var(--primary-color);
+}
 
-@media(min-width:475px){
+
     /* xs */
 @media (min-width: 475px) {
     .hero {
@@ -75,7 +79,6 @@
       font-size: var(--size-base);
     } */
   }
-}
 /*sm*/
 /* @media(min-width:640px){
 } */

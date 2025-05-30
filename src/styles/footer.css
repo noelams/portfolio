@@ -7,3 +7,14 @@
     background-color: var(--background-color);
     padding: 2rem;
 }
+
+.footer hr {
+    width: 50%;
+    border-color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+
+  .footer .description {
+    margin: 0.25rem 0;
+    color: var(--sec3-color);
+  }

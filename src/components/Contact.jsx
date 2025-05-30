@@ -39,6 +39,10 @@ function Contact() {
     setFormdata((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const triggerToast = (msg) =>{
+    
+  }
+
   return (
     <div
       className="container"
@@ -50,14 +54,12 @@ function Contact() {
           Got an idea or just want to say hi? Drop me a message below.
         </h3>
       </div>
-      <form
-        ref={form}
-        onSubmit={handleSubmit}
-        name="myForm"
-        className="form"
-        disabled={isPending}
-      >
+      <form ref={form} onSubmit={handleSubmit} name="myForm" className="form">
+        <label htmlFor="name" className="contact__label">
+          Name
+        </label>
         <input
+          id="name"
           type="text"
           name="name"
           placeholder="Name"
@@ -66,7 +68,11 @@ function Contact() {
           className="name__input"
           required
         />
+        <label htmlFor="email" className="contact__label">
+          Email
+        </label>
         <input
+          id="email"
           type="email"
           name="email"
           placeholder="Email"
@@ -75,7 +81,11 @@ function Contact() {
           className="email-input"
           required
         />
+        <label htmlFor="message" className="contact__label">
+          Message
+        </label>
         <textarea
+          id="message"
           name="message"
           placeholder="Message"
           value={formdata.message}
@@ -93,7 +103,11 @@ function Contact() {
       </form>
       <ul className="social__links-container">
         <li className="social__links">
-          <a href="https://github.com/noelams" target="_blank">
+          <a
+            href="https://github.com/noelams"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -111,6 +125,7 @@ function Contact() {
           <a
             href="https://www.linkedin.com/in/inalegwu-noel-ali-030049239/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +140,11 @@ function Contact() {
           </a>
         </li>
         <li className="social__links">
-          <a href="mailto:noelams@gmail.com" target="_blank">
+          <a
+            href="mailto:noelams@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -145,7 +164,11 @@ function Contact() {
           </a>
         </li>
         <li className="social__links">
-          <a href="https://x.com/Alinoel17" target="_blank">
+          <a
+            href="https://x.com/Alinoel17"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentcolor"
@@ -163,7 +186,5 @@ function Contact() {
     </div>
   );
 }
-
-//https://github.com/noelams/chessTimer
 
 export default Contact;
