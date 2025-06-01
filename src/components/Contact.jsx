@@ -1,9 +1,11 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import "../styles/contact.css";
+import Toast from "./Toast";
 
 function Contact() {
   const [isPending, setIsPending] = useState(false);
+  const [toasts, setToasts] = useState([]);
 
   const [formdata, setFormdata] = useState({
     name: "",
@@ -21,14 +23,14 @@ function Contact() {
     emailjs.sendForm("service_nw4sh4t", "template_hh0tkze", form.current).then(
       (Response) => {
         console.log("SUCCESS!", Response.status, Response.text);
-        alert("Email sent successfully");
+        addToast("Email sent successfully!", "success");
         form.current.reset();
         setFormdata({ name: "", email: "", message: "" });
         setIsPending(false);
       },
       (error) => {
         console.log("Failed!", error);
-        alert("Failed to send Email. Please try Again");
+        addToast("Failed to send Email. Please try again.", "error");
         setIsPending(false);
       }
     );
@@ -39,9 +41,15 @@ function Contact() {
     setFormdata((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const triggerToast = (msg) =>{
-    
-  }
+  const addToast = (message, type) => {
+    const id = Date.now();
+    const newToast = { id, message, type };
+    setToasts((prevToasts) => [...prevToasts, newToast]);
+  };
+
+  const removeToast = (id) => {
+    setToasts((prevToasts) => prevToasts.filter((toast) => toast.id !== id));
+  };
 
   return (
     <div
@@ -183,6 +191,17 @@ function Contact() {
           </a>
         </li>
       </ul>
+
+      <div className="toast-container">
+        {toasts.map((toast) => (
+          <Toast
+            key={toast.id}
+            message={toast.message}
+            type={toast.type}
+            onClose={() => removeToast(toast.id)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
