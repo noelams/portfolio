@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import About from "./components/About";
-import Resume from "./components/Resume";
+import Resume from "./components/Resume.jsx";
 
 import "./styles/App.css";
 import "./styles/utils.css";
