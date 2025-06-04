@@ -13,7 +13,13 @@
     font-size: var(--size-2xl);
     font-weight: bold;
     color: var(--sec2-color);
+    align-self: center;
+
 }
+
+/* .halfscreen{
+    display: none;
+} */
 
 .about__description{
     max-width: 60ch;
@@ -68,6 +74,9 @@ strong {
     font-weight: bold;
   }
 
+  .fullscreen{
+    display: none;
+  }
   /* xs */
   @media (min-width: 475px) {
     .about {
@@ -136,6 +145,15 @@ strong {
     .about__list{
         font-size: var(--size-lg);
     }
+    .fullscreen{
+        display: flex;
+        align-self: center;
+      }
+
+
+      .halfscreen{
+        display: none;
+      }
 }
 /*xl*/
 @media(min-width:1280px){

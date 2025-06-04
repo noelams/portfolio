@@ -55,6 +55,7 @@ function Contact() {
     <div
       className="container"
       style={{ display: "flex", flexDirection: "column" }}
+      id="contact"
     >
       <div className="heading__container">
         <h2 className="heading">Let's Build Something Great Together</h2>
@@ -109,7 +110,7 @@ function Contact() {
           <button type="submit">Send Message </button>
         )}
       </form>
-      <ul className="social__links-container">
+      {/* <ul className="social__links-container">
         <li className="social__links">
           <a
             href="https://github.com/noelams"
@@ -190,7 +191,7 @@ function Contact() {
             </svg>
           </a>
         </li>
-      </ul>
+      </ul> */}
 
       <div className="toast-container">
         {toasts.map((toast) => (

@@ -20,6 +20,7 @@
    color: var(--sec2-color);
    letter-spacing: -0.05em;
    padding: 0.25rem 0.5rem;
+   cursor:pointer;
 
 
    transition: color 0.3s;

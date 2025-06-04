@@ -41,7 +41,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="container project">
+    <div className="container project" id="projects">
       <h1 className="project__title heading">Projects</h1>
       <div className="project__card-container">
         {projects.map((project) => {

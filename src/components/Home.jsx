@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "../styles/hero.css";
 
 function Home() {
@@ -19,11 +19,11 @@ function Home() {
       </h2>
       <p className="hero__description">
         Checkout some of my work through the{" "}
-        <Link to="/projects" className="hero__link">
+        <Link to="projects" className="hero__link" smooth={true} duration={300}>
           Project page
         </Link>{" "}
         or drop me a message through the{" "}
-        <Link to="/contact" className="hero__link">
+        <Link to="contact" className="hero__link" smooth={true} duration={300}>
           Contact Page.{" "}
         </Link>
         Let's create something amazing together!

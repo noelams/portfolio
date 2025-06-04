@@ -38,6 +38,7 @@
 .hero__link{
     text-decoration: none;
     color: var(--sec2-color);
+    cursor: pointer;
     
     transition: color 0.3s;
   }
