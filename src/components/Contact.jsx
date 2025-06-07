@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import "../styles/contact.css";
 import Toast from "./Toast";
+import RevealOnScroll from "./RevealOnScroll";
 
 function Contact() {
   const [isPending, setIsPending] = useState(false);
@@ -52,65 +53,66 @@ function Contact() {
   };
 
   return (
-    <div
-      className="container"
-      style={{ display: "flex", flexDirection: "column" }}
-      id="contact"
-    >
-      <div className="heading__container">
-        <h2 className="heading">Let's Build Something Great Together</h2>
-        <h3 className="sub__heading">
-          Got an idea or just want to say hi? Drop me a message below.
-        </h3>
-      </div>
-      <form ref={form} onSubmit={handleSubmit} name="myForm" className="form">
-        <label htmlFor="name" className="contact__label">
-          Name
-        </label>
-        <input
-          id="name"
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={formdata.name}
-          onChange={handleChange}
-          className="name__input"
-          required
-        />
-        <label htmlFor="email" className="contact__label">
-          Email
-        </label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formdata.email}
-          onChange={handleChange}
-          className="email-input"
-          required
-        />
-        <label htmlFor="message" className="contact__label">
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Message"
-          value={formdata.message}
-          onChange={handleChange}
-          required
-          className="message-input"
-        />
-        {isPending ? (
-          <button type="button" disabled>
-            Sending...
-          </button>
-        ) : (
-          <button type="submit">Send Message </button>
-        )}
-      </form>
-      {/* <ul className="social__links-container">
+    <RevealOnScroll>
+      <div
+        className="container"
+        style={{ display: "flex", flexDirection: "column" }}
+        id="contact"
+      >
+        <div className="heading__container">
+          <h2 className="heading">Let's Build Something Great Together</h2>
+          <h3 className="sub__heading">
+            Got an idea or just want to say hi? Drop me a message below.
+          </h3>
+        </div>
+        <form ref={form} onSubmit={handleSubmit} name="myForm" className="form">
+          <label htmlFor="name" className="contact__label">
+            Name
+          </label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formdata.name}
+            onChange={handleChange}
+            className="name__input"
+            required
+          />
+          <label htmlFor="email" className="contact__label">
+            Email
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formdata.email}
+            onChange={handleChange}
+            className="email-input"
+            required
+          />
+          <label htmlFor="message" className="contact__label">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Message"
+            value={formdata.message}
+            onChange={handleChange}
+            required
+            className="message-input"
+          />
+          {isPending ? (
+            <button type="button" disabled>
+              Sending...
+            </button>
+          ) : (
+            <button type="submit">Send Message </button>
+          )}
+        </form>
+        {/* <ul className="social__links-container">
         <li className="social__links">
           <a
             href="https://github.com/noelams"
@@ -124,7 +126,7 @@ function Contact() {
               aria-hidden="true"
               width="35"
               height="35"
-            >
+              >
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
             </svg>
           </a>
@@ -163,7 +165,7 @@ function Contact() {
               class="size-6"
               width="35"
               height="35"
-            >
+              >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -193,17 +195,18 @@ function Contact() {
         </li>
       </ul> */}
 
-      <div className="toast-container">
-        {toasts.map((toast) => (
-          <Toast
-            key={toast.id}
-            message={toast.message}
-            type={toast.type}
-            onClose={() => removeToast(toast.id)}
-          />
-        ))}
+        <div className="toast-container">
+          {toasts.map((toast) => (
+            <Toast
+              key={toast.id}
+              message={toast.message}
+              type={toast.type}
+              onClose={() => removeToast(toast.id)}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </RevealOnScroll>
   );
 }
 

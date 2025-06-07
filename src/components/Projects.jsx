@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/project.css";
 import ProjectCard from "./ProjectCard";
+import RevealOnScroll from "./RevealOnScroll";
 
 const projects = [
   {
@@ -41,23 +42,25 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="container project" id="projects">
-      <h1 className="project__title heading">Projects</h1>
-      <div className="project__card-container">
-        {projects.map((project) => {
-          return (
-            <ProjectCard
-              link={project.link}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              alt={"ScreenShot of Application"}
-              image={project.image}
-            />
-          );
-        })}
+    <RevealOnScroll>
+      <div className="container project" id="projects">
+        <h1 className="project__title heading">Projects</h1>
+        <div className="project__card-container">
+          {projects.map((project) => {
+            return (
+              <ProjectCard
+                link={project.link}
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
+                alt={"ScreenShot of Application"}
+                image={project.image}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </RevealOnScroll>
   );
 }
 
