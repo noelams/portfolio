@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 5rem;
 }
 
 
@@ -60,8 +59,8 @@
     }
   
     .hero__img {
-      width: 6.5rem;
-      height: 6.5rem;
+      width: 7rem;
+      height: 7rem;
     }
   
     .hero__subtitle {
@@ -87,8 +86,8 @@
 @media(min-width:768px){
 
   .hero__img {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
   }
 
   .hero__subtitle {
@@ -108,8 +107,8 @@
 /*lg*/
 @media(min-width:1024px){
     .hero__img {
-        width: 8rem;
-        height: 8rem;
+        width: 12rem;
+        height: 12rem;
       }
     
       .hero__subtitle {
